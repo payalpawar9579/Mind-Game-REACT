@@ -1,0 +1,113 @@
+/* General styles for the game component */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the game background */
+#three-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensure it stays behind the game content */
+}
+
+/* Styles for the game content */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Title styling */
+h1 {
+  font-size: 3rem; /* Larger title */
+  margin-bottom: 20px;
+  color: #FFD700; /* Gold color for the title */
+}
+
+/* Styling for the message */
+p {
+  font-size: 1.5rem; /* Larger text for messages */
+  margin-bottom: 15px;
+}
+
+/* Highlighting for the spoken word */
+.text-violet-500 {
+  color: violet;
+  font-weight: bold; /* Make the spoken word bold */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effects */
+button:hover {
+  opacity: 0.9; /* Slightly fade on hover */
+}
+
+/* Specific button styles for each action */
+.bg-green-500 {
+  background-color: #48bb78; /* Green */
+}
+
+.bg-yellow-400 {
+  background-color: #f6e05e; /* Yellow */
+}
+
+.bg-purple-600 {
+  background-color: #805ad5; /* Purple */
+}
+
+/* Shadow effect for buttons */
+.shadow-lg {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Game.css */
+
+/* Button Styles */
+.game-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 0.5rem; /* Rounded corners */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.2rem; /* Font size */
+}
+
+.game-button:hover {
+  transform: translateY(-3px) scale(1.05); /* Move the button slightly up and scale */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect for reflection */
+}
+
+/* Specific button styles for each action */
+.bg-green-500 {
+  background-color: #48bb78; /* Green */
+}
+
+.bg-yellow-400 {
+  background-color: #f6e05e; /* Yellow */
+}
+
+.bg-purple-600 {
+  background-color: #805ad5; /* Purple */
+}
+
+/* Optional: To create a slight glow effect */
+.game-button:hover {
+  filter: brightness(1.1); /* Slightly brighten the button on hover */
+}

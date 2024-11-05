@@ -1,0 +1,58 @@
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Animation Utility Classes */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 1s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+/* Button Styles */
+.game-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.game-button:hover {
+  transform: translateY(-3px); /* Move the button slightly up */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect for reflection */
+}
+
+/* Optional: To create a slight glow effect */
+.game-button:hover {
+  filter: brightness(1.1); /* Slightly brighten the button on hover */
+}
